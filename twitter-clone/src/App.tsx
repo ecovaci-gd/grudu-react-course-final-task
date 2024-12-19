@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import Tweets from "./pages/Tweets";
+import { getUserFromLocalStorage } from "./utils/getUserFromLocalStorage";
 
-function App() {
+const PrivateRoute = ({ element }: { element: JSX.Element }) => {
+  const user = getUserFromLocalStorage();
+  return user.id ? element : <Navigate to="/login" />;
+};
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/tweets" element={<PrivateRoute element={<Tweets />} />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

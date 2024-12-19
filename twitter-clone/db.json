@@ -1,0 +1,73 @@
+{
+  "tweets": [
+    {
+      "id": "1",
+      "author_id": "alice_wonder",
+      "text": "What are the benefits of functional programming? Can someone explain in simple terms?"
+    },
+    {
+      "id": "2",
+      "author_id": "tech_guru",
+      "text": "Debugging tip: A good debugger can save you hours, but sometimes a simple log statement does the trick. What's your preference?"
+    },
+    {
+      "id": "3",
+      "author_id": "dev_diaries",
+      "text": "If Python were a person, describe them in one sentence."
+    },
+    {
+      "id": "1001",
+      "author_id": "coding_enthusiast",
+      "text": "Just discovered a bug that was hidden for weeks. Feels like finding a needle in a haystack!"
+    },
+    {
+      "id": "1002",
+      "author_id": "daily_dev_tips",
+      "text": "Pro tip: Consistent indentation is the difference between readable code and frustration."
+    }
+  ],
+  "users": [
+    {
+      "id": "alice_wonder",
+      "fullName": "Alice Wonder",
+      "email": "alice.wonder@example.com",
+      "password": "securepassword123"
+    },
+    {
+      "id": "tech_guru",
+      "fullName": "Tech Guru",
+      "email": "tech.guru@example.com",
+      "password": "gurusecret"
+    },
+    {
+      "id": "dev_diaries",
+      "fullName": "Dev Diaries",
+      "email": "dev.diaries@example.com",
+      "password": "password456"
+    },
+    {
+      "id": "coding_enthusiast",
+      "fullName": "Coding Enthusiast",
+      "email": "coding.enthusiast@example.com",
+      "password": "ilovecoding"
+    },
+    {
+      "id": "daily_dev_tips",
+      "fullName": "Daily Dev Tips",
+      "email": "daily.dev.tips@example.com",
+      "password": "tipsdaily"
+    },
+    {
+      "id": "new_user",
+      "fullName": "New User",
+      "email": "newUser@gmail.com",
+      "password": "newuserpass"
+    },
+    {
+      "id": "another_user",
+      "fullName": "Another User",
+      "email": "anotheruser@gmail.com",
+      "password": "12345678"
+    }
+  ]
+}
